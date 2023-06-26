@@ -32,11 +32,10 @@ RouteService is a user-centric and efficient service designed to assist commuter
 - OpenRouteService
 
 ---
-**Conceptual Model, Logical Model and Physical Model**
+**Conceptual Model, Logical Model, and Physical Model**
 ![alt text](Figures/data_models.drawio.png)
 
 **Architecture**
-
 ![alt text](Figures/ReportArchitecture.drawio.png)
 
 ---
