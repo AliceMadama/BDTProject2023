@@ -91,6 +91,7 @@ The name of the bot is @routecalculatorBDT_bot.
 It should be used only when running the bot files, as the function bot_polling() must be in use for it to communicate with the user.
 More detailed documentation is found within the code. 
 
+![alt text](Figures/Figures/telegram_ss.png)
 
 > **Warning**
 > You should have Firefox installed on your running device for the code to produce a proper Folium graph.
