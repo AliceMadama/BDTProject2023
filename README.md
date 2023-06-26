@@ -28,7 +28,8 @@ RouteService is a user-centric and efficient service designed to assist commuter
 - Mongo DB
 - Spark Structured Streaming
 - Telegram
-- Docker
+- Docker Compose
+- OpenRouteService
 
 ---
 **Conceptual Model**
