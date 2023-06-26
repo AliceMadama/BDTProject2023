@@ -43,8 +43,20 @@ RouteService is a user-centric and efficient service designed to assist commuter
 
 **Project Files**
 
-1. `name of file`, describe here
-2. `name of file`, more descriptions!
+- LSTM 2
+  - best_model.pt
+  - prediction.py
+  - training.py
+  - training3.py
+   
+- data_prepare
+  - graphs.py
+  - holiday.py
+  - ny_full_data_prep.py
+  - nydata_vol.py
+
+- docker-files
+   - Dockerfile
 
 > _Kafka Files_
 > 1. `kafka_consumer.py` requires description
@@ -107,10 +119,12 @@ TRANSACTIONS_PER_STEP = 10000 # 10000 txns within "TIME_STEP" minutes, can scale
 
 The name of the bot is @routecalculatorBDT_bot.
 It should be used only when running the bot files, as the function bot_polling() must be in use for it to communicate with the user.
-More detailed documentation is found within the code.
+More detailed documentation is found within the code. 
+
 
 > **Warning**
-> You should have Firefox installed on your running device for the code to produce a proper Folium graph
+> You should have Firefox installed on your running device for the code to produce a proper Folium graph.
+> It doesn't consider every single possible exception, try to stick with the given instructions.
 
 ---
 _Additional things_:
