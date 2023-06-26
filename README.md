@@ -78,7 +78,7 @@ Framework has been tested with:
 
 - Python 3.9
 - Docker desktop 4.8.2
-- macOS Venture 13.4.1
+- macOS Ventura 13.4.1
 
 ---
 
@@ -105,7 +105,9 @@ TRANSACTIONS_PER_STEP = 10000 # 10000 txns within "TIME_STEP" minutes, can scale
 ---
 **Telegram Bot**
 
-The name of the bot is @routecalculatorBDT_bot. It should be used only when running the bot files, as the function bot_polling() must be in use for it to communicate with the user.
+The name of the bot is @routecalculatorBDT_bot.
+It should be used only when running the bot files, as the function bot_polling() must be in use for it to communicate with the user.
+More detailed documentation is found within the code.
 
 > **Warning**
 > You should have Firefox installed on your running device for the code to produce a proper Folium graph
