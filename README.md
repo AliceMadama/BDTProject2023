@@ -86,23 +86,9 @@ Framework has been tested with:
 ---
 
 **Simulator**
-The simulation aims to reproduce working days of communication between parties.
-
+##not ready yet
 How does it work?
 
-Generates users and their route requests
-Simulation trial starts with tunable params
-At the end of each simulation simple statistics are printed out
-Simulation works with GUI applications
-
-```python copyable
-
-INTERACTIVE_MODE = True # False to disable console views
-NUM_TRIALS = 1 # simulation cycles
-SIMULATION_TRIAL_TOTAL_TIME = 60 #seconds, you can set up to 60*60*12
-CUSTOMERS_THREADS = 2 # How many pyhton threads should be used to act as clients
-TIME_STEP = 0.1 # 0.1 hours = 6 min
-TRANSACTIONS_PER_STEP = 10000 # 10000 txns within "TIME_STEP" minutes, can scale to Millions
 
 ```
 ---
