@@ -57,7 +57,7 @@ RouteService is a user-centric and efficient service designed to assist commuter
 >    
 > _Spark Structured Streaming Files_
 > 1. nrt_stream_process.py
-> 2. nrt_stream_response.py
+> 2. response_distributor.py
 
 > requirements.txt All the packages used in the project
 
