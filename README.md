@@ -1,6 +1,5 @@
 # BDTProject2023: Efficient routing system
-Official Project Repository
-
+_Official Project Repository_
 
 ---
 
@@ -35,7 +34,7 @@ RouteService is a user-centric and efficient service designed to assist commuter
 
 **Architecture**
 
-![Alt Text]([image_url](https://viewer.diagrams.net/?tags=%7B%7D&highlight=FFFFFF&edit=_blank&layers=1&nav=1#G1c2TAtSvP3Cvnkl3Z4EuhmDGIbaVkIuvL)https://viewer.diagrams.net/?tags=%7B%7D&highlight=FFFFFF&edit=_blank&layers=1&nav=1#G1c2TAtSvP3Cvnkl3Z4EuhmDGIbaVkIuvL)
+![Alt Text]([(https://viewer.diagrams.net/?tags=%7B%7D&highlight=FFFFFF&edit=_blank&layers=1&nav=1#G1c2TAtSvP3Cvnkl3Z4EuhmDGIbaVkIuvL)https://viewer.diagrams.net/?tags=%7B%7D&highlight=FFFFFF&edit=_blank&layers=1&nav=1#G1c2TAtSvP3Cvnkl3Z4EuhmDGIbaVkIuvL)])
 
 ---
 
