@@ -73,10 +73,10 @@ def main():
         traffic_flow_data = redis_manager.get(traffic_flow_key)
 
         if traffic_flow_data:
-            print("Weather data fetched from Redis.")
+            # print("Weather data fetched from Redis.")
             traffic_flow_data = json.loads(traffic_flow_data.decode('utf-8'))
         else:
-            print("Weather data fetched from Mongo.")
+            # print("Weather data fetched from Mongo.")
             traffic_flow_data = mongo_db_manager.get_latest_data(traffic_flow_key)
             # Cache the traffic flow data in Redis
             # redis_manager.set(traffic_flow_key, json.dumps(traffic_flow_data))
@@ -87,22 +87,18 @@ def main():
         weather_data = redis_manager.get(weather_key)
 
         if weather_data:
-            print("Weather data fetched from Redis.")
+            # print("Weather data fetched from Redis.")
             weather_data = json.loads(weather_data.decode('utf-8'))
         else:
-            print("Weather data fetched from Mongo.")
+            # print("Weather data fetched from Mongo.")
             # Fetch weather data from MongoDB using a key
             weather_data = mongo_db_manager.get_latest_data(weather_key)
             # Cache the weather data in Redis
             # redis_manager.set(weather_key, json.dumps(weather_data))
 
-        print(response)
 
-        # response = json.loads(response) #to json
-        # print("111")
-        # print(traffic_flow_data["Vol"])
-        # print(weather_data["temperature"])
-        # print(response["type"])
+
+
         response['congestion_level'] = traffic_flow_data["Vol"]  # after ml
         response['weather_condition'] = weather_data["temperature"]
 
@@ -125,15 +121,9 @@ def main():
         # Save the processed stream into Kafka
         kafka_producer = KafkaProducer(bootstrap_servers=bootstrap_servers)
 
-        print("---", record.asDict())
         value = json.dumps(record.asDict(), ensure_ascii=False).encode('utf-8')
-        print("===", value)
+
         kafka_producer.send('route_response_tp', value=value)
-        #
-        # producer = KafkaProducer(bootstrap_servers=bootstrap_servers)
-        # value = json.dumps(record).encode('utf-8')
-        # print(value)
-        # producer.send("route_response_tp", value)
 
     query = processed_stream.writeStream \
         .outputMode("append") \
