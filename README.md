@@ -45,7 +45,7 @@ RouteService is a user-centric and efficient service designed to assist commuter
 
 **Architecture**
 
-# image architecture
+![alt text](Figures/ReportArchitecture.drawio.png)
 
 ---
 
