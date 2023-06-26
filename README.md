@@ -103,7 +103,14 @@ TRANSACTIONS_PER_STEP = 10000 # 10000 txns within "TIME_STEP" minutes, can scale
 
 ```
 ---
+**Telegram Bot**
 
+The name of the bot is @routecalculatorBDT_bot. It should be used only when running the bot files, as the function bot_polling() must be in use for it to communicate with the user.
+
+> **Warning**
+> You should have Firefox installed on your running device for the code to produce a proper Folium graph
+
+---
 _Additional things_:
 
 List of Kafka topics:
