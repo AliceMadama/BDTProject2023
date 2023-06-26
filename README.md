@@ -31,6 +31,16 @@ RouteService is a user-centric and efficient service designed to assist commuter
 - Docker
 
 ---
+**Conceptual Model**
+---
+
+---
+**Logical Model**
+---
+
+---
+**Physical Model**
+---
 
 **Architecture**
 
