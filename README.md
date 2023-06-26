@@ -74,9 +74,6 @@ RouteService is a user-centric and efficient service designed to assist commuter
 
 1 pip install -r requirements.txt 
 2 ./start-stack.sh
-3 python3 ./simulator.py
-
-#Once the simulator started, type "como" as the city to run the experiment
 
 To stop the stack run:
  ./stop-stack.sh
@@ -88,14 +85,7 @@ Framework has been tested with:
 - Docker Desktop 4.20.1
 - macOS Ventura 13.4.1
 
----
 
-**Simulator**
-##not ready yet
-How does it work?
-
-
----
 **Telegram Bot**
 
 The name of the bot is @routecalculatorBDT_bot.
