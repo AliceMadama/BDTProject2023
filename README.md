@@ -43,10 +43,15 @@ RouteService is a user-centric and efficient service designed to assist commuter
 1. `name of file`, describe here
 2. `name of file`, more descriptions!
 
-> Spark Structured Processing
-> 1. `name of file`
-> 2. `name of file`
-> 3. `name of file`
+> _Kafka Files_
+> 1. `kafka_consumer.py` requires description
+> 2. `kafka_producer_route` The file that considers the route requests as producers in the Kafka Process
+> 3. `kafka_producer_traffic` File that considers traffic data as producer
+> 4. `kafka_producer_weather` File that considers weather data as producer
+>    
+> _Spark Structured Streaming Files_
+> 1. nrt_stream_process.py
+> 2. nrt_stream_response.py
 
 > Folders
 
@@ -66,7 +71,7 @@ To stop the stack run:
  ./stop-stack.sh
 ```
 
-Framework has beeyn tested with:
+Framework has been tested with:
 
 - Python 3.9
 - Docker desktop 4.8.2
@@ -103,6 +108,7 @@ List of Kafka topics:
 - `traffic_flow_tp`
 - `weather_tp`
 - `route_requests_tp`
+- `route_response_tp`
 
 List of MongoDB collections:
 
