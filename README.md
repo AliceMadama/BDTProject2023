@@ -59,6 +59,8 @@ RouteService is a user-centric and efficient service designed to assist commuter
 > 1. nrt_stream_process.py
 > 2. nrt_stream_response.py
 
+> requirements.txt All the packages used in the project
+
 > Folders
 
 ---
