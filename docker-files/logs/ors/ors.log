@@ -1,0 +1,104 @@
+2023-06-23 00:00:12,692 INFO [ors.Application] - Starting Application v7.0.1 using Java 17.0.7 on b6e22d7bad6e with PID 1 (/home/ors/tomcat/webapps/ors/WEB-INF/classes started by root in /home/ors)
+2023-06-23 00:00:12,699 DEBUG [ors.Application] - Running with Spring Boot v2.7.12, Spring v5.3.27
+2023-06-23 00:00:12,700 INFO [ors.Application] - No active profile set, falling back to 1 default profile: "default"
+2023-06-23 00:00:14,190 INFO [ors.Application] - Started Application in 1.977 seconds (JVM running for 8.322)
+2023-06-25 07:18:03,787 INFO [ors.Application] - Starting Application v7.0.1 using Java 17.0.7 on 3a47500feb77 with PID 1 (/home/ors/tomcat/webapps/ors/WEB-INF/classes started by root in /home/ors)
+2023-06-25 07:18:03,790 DEBUG [ors.Application] - Running with Spring Boot v2.7.12, Spring v5.3.27
+2023-06-25 07:18:03,791 INFO [ors.Application] - No active profile set, falling back to 1 default profile: "default"
+2023-06-25 07:18:05,363 INFO [ors.Application] - Started Application in 2.133 seconds (JVM running for 8.177)
+2023-06-25 11:36:12,764 INFO [ors.Application] - Starting Application v7.0.1 using Java 17.0.7 on 867f05658d68 with PID 1 (/home/ors/tomcat/webapps/ors/WEB-INF/classes started by root in /home/ors)
+2023-06-25 11:36:12,767 DEBUG [ors.Application] - Running with Spring Boot v2.7.12, Spring v5.3.27
+2023-06-25 11:36:12,768 INFO [ors.Application] - No active profile set, falling back to 1 default profile: "default"
+2023-06-25 11:36:14,472 INFO [ors.Application] - Started Application in 2.251 seconds (JVM running for 8.122)
+2023-06-25 12:32:00,361 INFO [ors.Application] - Starting Application v7.0.1 using Java 17.0.7 on 6dc2b6587cc1 with PID 1 (/home/ors/tomcat/webapps/ors/WEB-INF/classes started by root in /home/ors)
+2023-06-25 12:32:00,364 DEBUG [ors.Application] - Running with Spring Boot v2.7.12, Spring v5.3.27
+2023-06-25 12:32:00,364 INFO [ors.Application] - No active profile set, falling back to 1 default profile: "default"
+2023-06-25 12:32:01,886 INFO [ors.Application] - Started Application in 2.023 seconds (JVM running for 7.216)
+2023-06-25 12:33:22,783 INFO [ors.Application] - Starting Application v7.0.1 using Java 17.0.7 on 6dc2b6587cc1 with PID 1 (/home/ors/tomcat/webapps/ors/WEB-INF/classes started by root in /home/ors)
+2023-06-25 12:33:22,785 DEBUG [ors.Application] - Running with Spring Boot v2.7.12, Spring v5.3.27
+2023-06-25 12:33:22,786 INFO [ors.Application] - No active profile set, falling back to 1 default profile: "default"
+2023-06-25 12:33:24,292 INFO [ors.Application] - Started Application in 1.982 seconds (JVM running for 7.329)
+2023-06-25 12:33:38,370 INFO [ors.Application] - Starting Application v7.0.1 using Java 17.0.7 on 6dc2b6587cc1 with PID 1 (/home/ors/tomcat/webapps/ors/WEB-INF/classes started by root in /home/ors)
+2023-06-25 12:33:38,373 DEBUG [ors.Application] - Running with Spring Boot v2.7.12, Spring v5.3.27
+2023-06-25 12:33:38,373 INFO [ors.Application] - No active profile set, falling back to 1 default profile: "default"
+2023-06-25 12:33:39,885 INFO [ors.Application] - Started Application in 1.98 seconds (JVM running for 7.266)
+2023-06-25 12:37:36,989 INFO [ors.Application] - Starting Application v7.0.1 using Java 17.0.7 on 85545fc822df with PID 1 (/home/ors/tomcat/webapps/ors/WEB-INF/classes started by root in /home/ors)
+2023-06-25 12:37:36,992 DEBUG [ors.Application] - Running with Spring Boot v2.7.12, Spring v5.3.27
+2023-06-25 12:37:36,993 INFO [ors.Application] - No active profile set, falling back to 1 default profile: "default"
+2023-06-25 12:37:38,574 INFO [ors.Application] - Started Application in 2.1 seconds (JVM running for 7.156)
+2023-06-25 12:39:13,803 INFO [ors.Application] - Starting Application v7.0.1 using Java 17.0.7 on 56492eab7b43 with PID 1 (/home/ors/tomcat/webapps/ors/WEB-INF/classes started by root in /home/ors)
+2023-06-25 12:39:13,806 DEBUG [ors.Application] - Running with Spring Boot v2.7.12, Spring v5.3.27
+2023-06-25 12:39:13,807 INFO [ors.Application] - No active profile set, falling back to 1 default profile: "default"
+2023-06-25 12:39:15,351 INFO [ors.Application] - Started Application in 2.204 seconds (JVM running for 6.855)
+2023-06-25 12:39:47,041 INFO [ors.Application] - Starting Application v7.0.1 using Java 17.0.7 on 56492eab7b43 with PID 1 (/home/ors/tomcat/webapps/ors/WEB-INF/classes started by root in /home/ors)
+2023-06-25 12:39:47,043 DEBUG [ors.Application] - Running with Spring Boot v2.7.12, Spring v5.3.27
+2023-06-25 12:39:47,044 INFO [ors.Application] - No active profile set, falling back to 1 default profile: "default"
+2023-06-25 12:39:48,994 INFO [ors.Application] - Started Application in 2.507 seconds (JVM running for 8.337)
+2023-06-25 12:41:21,360 INFO [ors.Application] - Starting Application v7.0.1 using Java 17.0.7 on b6e181832bca with PID 1 (/home/ors/tomcat/webapps/ors/WEB-INF/classes started by root in /home/ors)
+2023-06-25 12:41:21,363 DEBUG [ors.Application] - Running with Spring Boot v2.7.12, Spring v5.3.27
+2023-06-25 12:41:21,364 INFO [ors.Application] - No active profile set, falling back to 1 default profile: "default"
+2023-06-25 12:41:22,971 INFO [ors.Application] - Started Application in 2.129 seconds (JVM running for 7.783)
+2023-06-25 14:25:01,535 INFO [ors.Application] - Starting Application v7.0.1 using Java 17.0.7 on ffc59024a7e6 with PID 1 (/home/ors/tomcat/webapps/ors/WEB-INF/classes started by root in /home/ors)
+2023-06-25 14:25:01,538 DEBUG [ors.Application] - Running with Spring Boot v2.7.12, Spring v5.3.27
+2023-06-25 14:25:01,539 INFO [ors.Application] - No active profile set, falling back to 1 default profile: "default"
+2023-06-25 14:25:03,178 INFO [ors.Application] - Started Application in 2.184 seconds (JVM running for 9.488)
+2023-06-25 14:27:16,434 INFO [ors.Application] - Starting Application v7.0.1 using Java 17.0.7 on 35cc8c226f66 with PID 1 (/home/ors/tomcat/webapps/ors/WEB-INF/classes started by root in /home/ors)
+2023-06-25 14:27:16,440 DEBUG [ors.Application] - Running with Spring Boot v2.7.12, Spring v5.3.27
+2023-06-25 14:27:16,444 INFO [ors.Application] - No active profile set, falling back to 1 default profile: "default"
+2023-06-25 14:27:17,980 INFO [ors.Application] - Started Application in 2.081 seconds (JVM running for 7.828)
+2023-06-25 14:46:50,867 INFO [ors.Application] - Starting Application v7.0.1 using Java 17.0.7 on a92e89ebeb6b with PID 1 (/home/ors/tomcat/webapps/ors/WEB-INF/classes started by root in /home/ors)
+2023-06-25 14:46:50,869 DEBUG [ors.Application] - Running with Spring Boot v2.7.12, Spring v5.3.27
+2023-06-25 14:46:50,870 INFO [ors.Application] - No active profile set, falling back to 1 default profile: "default"
+2023-06-25 14:46:52,413 INFO [ors.Application] - Started Application in 2.032 seconds (JVM running for 6.911)
+2023-06-25 14:48:21,170 INFO [ors.Application] - Starting Application v7.0.1 using Java 17.0.7 on a92e89ebeb6b with PID 1 (/home/ors/tomcat/webapps/ors/WEB-INF/classes started by root in /home/ors)
+2023-06-25 14:48:21,173 DEBUG [ors.Application] - Running with Spring Boot v2.7.12, Spring v5.3.27
+2023-06-25 14:48:21,174 INFO [ors.Application] - No active profile set, falling back to 1 default profile: "default"
+2023-06-25 14:48:22,654 INFO [ors.Application] - Started Application in 1.969 seconds (JVM running for 7.419)
+2023-06-25 14:52:46,559 INFO [ors.Application] - Starting Application v7.0.1 using Java 17.0.7 on d8cd55021a79 with PID 1 (/home/ors/tomcat/webapps/ors/WEB-INF/classes started by root in /home/ors)
+2023-06-25 14:52:46,561 DEBUG [ors.Application] - Running with Spring Boot v2.7.12, Spring v5.3.27
+2023-06-25 14:52:46,562 INFO [ors.Application] - No active profile set, falling back to 1 default profile: "default"
+2023-06-25 14:52:48,137 INFO [ors.Application] - Started Application in 2.07 seconds (JVM running for 6.953)
+2023-06-25 14:55:30,225 INFO [ors.Application] - Starting Application v7.0.1 using Java 17.0.7 on c2fc733405b6 with PID 1 (/home/ors/tomcat/webapps/ors/WEB-INF/classes started by root in /home/ors)
+2023-06-25 14:55:30,227 DEBUG [ors.Application] - Running with Spring Boot v2.7.12, Spring v5.3.27
+2023-06-25 14:55:30,228 INFO [ors.Application] - No active profile set, falling back to 1 default profile: "default"
+2023-06-25 14:55:31,705 INFO [ors.Application] - Started Application in 2.018 seconds (JVM running for 6.746)
+2023-06-25 15:00:40,739 INFO [ors.Application] - Starting Application v7.0.1 using Java 17.0.7 on 8e46ff87e231 with PID 1 (/home/ors/tomcat/webapps/ors/WEB-INF/classes started by root in /home/ors)
+2023-06-25 15:00:40,741 DEBUG [ors.Application] - Running with Spring Boot v2.7.12, Spring v5.3.27
+2023-06-25 15:00:40,742 INFO [ors.Application] - No active profile set, falling back to 1 default profile: "default"
+2023-06-25 15:00:42,220 INFO [ors.Application] - Started Application in 1.958 seconds (JVM running for 5.206)
+2023-06-25 15:03:25,379 INFO [ors.Application] - Starting Application v7.0.1 using Java 17.0.7 on b071e44db77d with PID 1 (/home/ors/tomcat/webapps/ors/WEB-INF/classes started by root in /home/ors)
+2023-06-25 15:03:25,381 DEBUG [ors.Application] - Running with Spring Boot v2.7.12, Spring v5.3.27
+2023-06-25 15:03:25,382 INFO [ors.Application] - No active profile set, falling back to 1 default profile: "default"
+2023-06-25 15:03:26,838 INFO [ors.Application] - Started Application in 1.925 seconds (JVM running for 5.238)
+2023-06-25 15:04:28,760 INFO [ors.Application] - Starting Application v7.0.1 using Java 17.0.7 on 701caf9bcc54 with PID 1 (/home/ors/tomcat/webapps/ors/WEB-INF/classes started by root in /home/ors)
+2023-06-25 15:04:28,763 DEBUG [ors.Application] - Running with Spring Boot v2.7.12, Spring v5.3.27
+2023-06-25 15:04:28,764 INFO [ors.Application] - No active profile set, falling back to 1 default profile: "default"
+2023-06-25 15:04:30,305 INFO [ors.Application] - Started Application in 2.024 seconds (JVM running for 7.024)
+2023-06-25 15:05:49,346 INFO [ors.Application] - Starting Application v7.0.1 using Java 17.0.7 on 701caf9bcc54 with PID 1 (/home/ors/tomcat/webapps/ors/WEB-INF/classes started by root in /home/ors)
+2023-06-25 15:05:49,349 DEBUG [ors.Application] - Running with Spring Boot v2.7.12, Spring v5.3.27
+2023-06-25 15:05:49,350 INFO [ors.Application] - No active profile set, falling back to 1 default profile: "default"
+2023-06-25 15:05:50,873 INFO [ors.Application] - Started Application in 2.125 seconds (JVM running for 7.494)
+2023-06-26 13:46:09,448 INFO [ors.Application] - Starting Application v7.0.1 using Java 17.0.7 on d58cd3881233 with PID 1 (/home/ors/tomcat/webapps/ors/WEB-INF/classes started by root in /home/ors)
+2023-06-26 13:46:09,451 DEBUG [ors.Application] - Running with Spring Boot v2.7.12, Spring v5.3.27
+2023-06-26 13:46:09,452 INFO [ors.Application] - No active profile set, falling back to 1 default profile: "default"
+2023-06-26 13:46:11,128 INFO [ors.Application] - Started Application in 2.231 seconds (JVM running for 9.634)
+2023-06-26 17:43:34,232 INFO [ors.Application] - Starting Application v7.0.1 using Java 17.0.7 on 8a6ebe4ea06f with PID 1 (/home/ors/tomcat/webapps/ors/WEB-INF/classes started by root in /home/ors)
+2023-06-26 17:43:34,236 DEBUG [ors.Application] - Running with Spring Boot v2.7.12, Spring v5.3.27
+2023-06-26 17:43:34,236 INFO [ors.Application] - No active profile set, falling back to 1 default profile: "default"
+2023-06-26 17:43:36,102 INFO [ors.Application] - Started Application in 2.401 seconds (JVM running for 9.074)
+2023-06-26 17:44:23,571 INFO [ors.Application] - Starting Application v7.0.1 using Java 17.0.7 on 87ffefb5c7c0 with PID 1 (/home/ors/tomcat/webapps/ors/WEB-INF/classes started by root in /home/ors)
+2023-06-26 17:44:23,574 DEBUG [ors.Application] - Running with Spring Boot v2.7.12, Spring v5.3.27
+2023-06-26 17:44:23,575 INFO [ors.Application] - No active profile set, falling back to 1 default profile: "default"
+2023-06-26 17:44:25,310 INFO [ors.Application] - Started Application in 2.259 seconds (JVM running for 8.854)
+2023-06-26 17:44:47,918 INFO [ors.Application] - Starting Application v7.0.1 using Java 17.0.7 on 87ffefb5c7c0 with PID 1 (/home/ors/tomcat/webapps/ors/WEB-INF/classes started by root in /home/ors)
+2023-06-26 17:44:47,921 DEBUG [ors.Application] - Running with Spring Boot v2.7.12, Spring v5.3.27
+2023-06-26 17:44:47,922 INFO [ors.Application] - No active profile set, falling back to 1 default profile: "default"
+2023-06-26 17:44:50,131 INFO [ors.Application] - Started Application in 2.851 seconds (JVM running for 8.866)
+2023-06-26 17:45:00,481 INFO [ors.Application] - Starting Application v7.0.1 using Java 17.0.7 on 87ffefb5c7c0 with PID 1 (/home/ors/tomcat/webapps/ors/WEB-INF/classes started by root in /home/ors)
+2023-06-26 17:45:00,484 DEBUG [ors.Application] - Running with Spring Boot v2.7.12, Spring v5.3.27
+2023-06-26 17:45:00,485 INFO [ors.Application] - No active profile set, falling back to 1 default profile: "default"
+2023-06-26 17:45:02,148 INFO [ors.Application] - Started Application in 2.151 seconds (JVM running for 7.843)
+2023-06-26 17:47:16,426 INFO [ors.Application] - Starting Application v7.0.1 using Java 17.0.7 on 965ccce8d1d5 with PID 1 (/home/ors/tomcat/webapps/ors/WEB-INF/classes started by root in /home/ors)
+2023-06-26 17:47:16,429 DEBUG [ors.Application] - Running with Spring Boot v2.7.12, Spring v5.3.27
+2023-06-26 17:47:16,430 INFO [ors.Application] - No active profile set, falling back to 1 default profile: "default"
+2023-06-26 17:47:18,031 INFO [ors.Application] - Started Application in 2.163 seconds (JVM running for 7.889)

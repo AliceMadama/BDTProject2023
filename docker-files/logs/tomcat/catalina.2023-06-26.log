@@ -1,0 +1,72 @@
+26-Jun-2023 13:46:02.908 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+26-Jun-2023 13:46:08.628 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+26-Jun-2023 13:46:11.319 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+26-Jun-2023 17:42:42.167 INFO [Thread-4] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+26-Jun-2023 17:42:42.289 INFO [Thread-4] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+26-Jun-2023 17:42:42.303 INFO [Thread-4] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+26-Jun-2023 17:43:28.480 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+26-Jun-2023 17:43:33.438 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+26-Jun-2023 17:43:36.286 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+26-Jun-2023 17:44:07.958 INFO [Thread-4] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+26-Jun-2023 17:44:08.021 INFO [Thread-4] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+26-Jun-2023 17:44:08.026 INFO [Thread-4] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+26-Jun-2023 17:44:17.985 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+26-Jun-2023 17:44:22.774 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+26-Jun-2023 17:44:25.476 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+26-Jun-2023 17:44:38.684 INFO [Thread-4] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+26-Jun-2023 17:44:38.734 INFO [Thread-4] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+26-Jun-2023 17:44:38.740 INFO [Thread-4] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+26-Jun-2023 17:44:42.690 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+26-Jun-2023 17:44:46.928 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+26-Jun-2023 17:44:50.366 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+26-Jun-2023 17:44:51.471 INFO [Thread-4] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+26-Jun-2023 17:44:51.526 WARNING [Thread-4] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [ors] appears to have started a thread named [ORS-Init] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@17.0.7/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@17.0.7/java.util.concurrent.locks.LockSupport.park(LockSupport.java:341)
+ java.base@17.0.7/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(AbstractQueuedSynchronizer.java:506)
+ java.base@17.0.7/java.util.concurrent.ForkJoinPool.unmanagedBlock(ForkJoinPool.java:3463)
+ java.base@17.0.7/java.util.concurrent.ForkJoinPool.managedBlock(ForkJoinPool.java:3434)
+ java.base@17.0.7/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1623)
+ java.base@17.0.7/java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:435)
+ java.base@17.0.7/java.util.concurrent.ExecutorCompletionService.take(ExecutorCompletionService.java:200)
+ org.heigit.ors.routing.RoutingProfileManager.initialize(RoutingProfileManager.java:178)
+ org.heigit.ors.routing.RoutingProfileManager.getInstance(RoutingProfileManager.java:72)
+ org.heigit.ors.servlet.listeners.ORSInitContextListener.lambda$contextInitialized$0(ORSInitContextListener.java:40)
+ org.heigit.ors.servlet.listeners.ORSInitContextListener$$Lambda$1361/0x00000008016791f8.run(Unknown Source)
+ java.base@17.0.7/java.lang.Thread.run(Thread.java:833)
+26-Jun-2023 17:44:51.526 WARNING [Thread-4] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [ors] appears to have started a thread named [ORS-Kafka-Init] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ org.heigit.ors.routing.RoutingProfileManager.getInstance(RoutingProfileManager.java:70)
+ org.heigit.ors.routing.RoutingProfileManager.isInitComplete(RoutingProfileManager.java:711)
+ org.heigit.ors.servlet.listeners.ORSKafkaConsumerInitContextListener.lambda$contextInitialized$0(ORSKafkaConsumerInitContextListener.java:45)
+ org.heigit.ors.servlet.listeners.ORSKafkaConsumerInitContextListener$$Lambda$1362/0x0000000801679418.run(Unknown Source)
+ java.base@17.0.7/java.lang.Thread.run(Thread.java:833)
+26-Jun-2023 17:44:51.527 WARNING [Thread-4] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [ors] appears to have started a thread named [ORS-pl-car] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@17.0.7/java.io.RandomAccessFile.readBytes(Native Method)
+ java.base@17.0.7/java.io.RandomAccessFile.read(RandomAccessFile.java:428)
+ com.graphhopper.storage.RAMDataAccess.loadExisting(RAMDataAccess.java:124)
+ com.graphhopper.storage.BaseGraph.loadExisting(BaseGraph.java:475)
+ com.graphhopper.storage.GraphHopperStorage.loadExisting(GraphHopperStorage.java:371)
+ com.graphhopper.GraphHopper.load(GraphHopper.java:867)
+ com.graphhopper.GraphHopper.importOrLoad(GraphHopper.java:667)
+ org.heigit.ors.routing.graphhopper.extensions.ORSGraphHopper.importOrLoad(ORSGraphHopper.java:167)
+ org.heigit.ors.routing.RoutingProfile.initGraphHopper(RoutingProfile.java:193)
+ org.heigit.ors.routing.RoutingProfile.<init>(RoutingProfile.java:140)
+ org.heigit.ors.routing.RoutingProfileLoader.call(RoutingProfileLoader.java:39)
+ org.heigit.ors.routing.RoutingProfileLoader.call(RoutingProfileLoader.java:25)
+ java.base@17.0.7/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+ java.base@17.0.7/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+ java.base@17.0.7/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+ java.base@17.0.7/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+ java.base@17.0.7/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+ java.base@17.0.7/java.lang.Thread.run(Thread.java:833)
+26-Jun-2023 17:44:51.547 INFO [Thread-4] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+26-Jun-2023 17:44:51.553 INFO [Thread-4] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+26-Jun-2023 17:44:55.600 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+26-Jun-2023 17:44:59.765 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+26-Jun-2023 17:45:02.335 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+26-Jun-2023 17:46:22.771 INFO [Thread-4] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+26-Jun-2023 17:46:22.825 INFO [Thread-4] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+26-Jun-2023 17:46:22.848 INFO [Thread-4] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+26-Jun-2023 17:47:11.695 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+26-Jun-2023 17:47:15.624 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+26-Jun-2023 17:47:18.217 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
