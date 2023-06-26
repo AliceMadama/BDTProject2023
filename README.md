@@ -36,7 +36,8 @@ RouteService is a user-centric and efficient service designed to assist commuter
 ![alt text](Figures/data_models.drawio.png)
 
 **Architecture**
-![alt text](Figures/Screenshot 2023-06-26 at 22.33.36.png)
+
+![alt text](Figures/Archit.png)
 
 ---
 
