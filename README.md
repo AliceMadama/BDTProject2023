@@ -33,6 +33,7 @@ RouteService is a user-centric and efficient service designed to assist commuter
 
 ---
 **Conceptual Model, Logical Model, and Physical Model**
+
 ![alt text](Figures/data_models.drawio.png)
 
 **Architecture**
@@ -82,8 +83,8 @@ To stop the stack run:
 
 Framework has been tested with:
 
-- Python 3.9
-- Docker desktop 4.8.2
+- Python 3.10.0
+- Docker Desktop 4.20.1
 - macOS Ventura 13.4.1
 
 ---
