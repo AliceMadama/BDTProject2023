@@ -34,10 +34,79 @@ RouteService is a user-centric and efficient service designed to assist commuter
 
 **Architecture**
 
-![Alt Text]([(https://viewer.diagrams.net/?tags=%7B%7D&highlight=FFFFFF&edit=_blank&layers=1&nav=1#G1c2TAtSvP3Cvnkl3Z4EuhmDGIbaVkIuvL)https://viewer.diagrams.net/?tags=%7B%7D&highlight=FFFFFF&edit=_blank&layers=1&nav=1#G1c2TAtSvP3Cvnkl3Z4EuhmDGIbaVkIuvL)])
+# image architecture
 
 ---
 
 **Project Files**
 
-<div style="border-left: 1px solid #ccc; height: 100px;"></div>
+1. `name of file`, describe here
+2. `name of file`, more descriptions!
+
+> Spark Structured Processing
+> 1. `name of file`
+> 2. `name of file`
+> 3. `name of file`
+
+> Folders
+
+---
+
+**How to run**
+
+```shell copyable
+
+1 pip install -r requirements.txt 
+2 ./start-stack.sh
+3 python3 ./simulator.py
+
+#Once the simulator started, type "como" as the city to run the experiment
+
+To stop the stack run:
+ ./stop-stack.sh
+```
+
+Framework has beeyn tested with:
+
+- Python 3.9
+- Docker desktop 4.8.2
+- macOS Venture 13.4.1
+
+---
+
+**Simulator**
+The simulation aims to reproduce working days of communication between parties.
+
+How does it work?
+
+Generates users and their route requests
+Simulation trial starts with tunable params
+At the end of each simulation simple statistics are printed out
+Simulation works with GUI applications
+
+```python copyable
+
+INTERACTIVE_MODE = True # False to disable console views
+NUM_TRIALS = 1 # simulation cycles
+SIMULATION_TRIAL_TOTAL_TIME = 60 #seconds, you can set up to 60*60*12
+CUSTOMERS_THREADS = 2 # How many pyhton threads should be used to act as clients
+TIME_STEP = 0.1 # 0.1 hours = 6 min
+TRANSACTIONS_PER_STEP = 10000 # 10000 txns within "TIME_STEP" minutes, can scale to Millions
+
+```
+---
+
+_Additional things_:
+
+List of Kafka topics:
+
+- `traffic_flow_tp`
+- `weather_tp`
+- `route_requests_tp`
+
+List of MongoDB collections:
+
+- `route_request_tp`
+- `weather_tp`
+- `traffic_flow_tp`
+- `customers` 
