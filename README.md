@@ -47,6 +47,7 @@ RouteService is a user-centric and efficient service designed to assist commuter
 >  - best_model.pt
 >  - prediction.py
 >  - training3.py
+
 > docker-files # The folder contains all the Docker Compose YAML files for the technologies
 
 > _Kafka Files_
@@ -92,7 +93,6 @@ Framework has been tested with:
 How does it work?
 
 
-```
 ---
 **Telegram Bot**
 
