@@ -61,13 +61,9 @@ class Response:
     def process_record(self, response):
         # Parse the JSON response
         request_id = response["id"]
-        # print(response["id"])
-        # print(response["processed_dst"])
-        fts = json.loads(response["processed_dst"])
-        # print(fts["features"])
 
-        # congestion_level = ""
-        # weather_conditions = ""
+        fts = json.loads(response["processed_dst"])
+
         congestion_level = fts['congestion_level']
         weather_conditions = fts['weather_condition']
         timestamp = datetime.datetime.now().isoformat()
@@ -105,7 +101,6 @@ class Response:
         for message in self.consumer:
             if message is None:
                 continue
-            # print(message.value)
 
             # Decode and process the message
 
@@ -128,7 +123,7 @@ class Response:
         response_message = ""
         for result in processed_result:
             # Extract relevant information from the processed result and append it to the response message
-            print(result)
+            # print(result)
             map_graph = self.create_map(result)
             image1 = map_graph._to_png()
             photo_stream1 = io.BytesIO(image1)
