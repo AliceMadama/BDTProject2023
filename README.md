@@ -122,14 +122,14 @@ _Additional things_:
 
 List of Kafka topics:
 
-- `traffic_flow_tp`
+- `traffic_flow_tpp`
 - `weather_tp`
 - `route_requests_tp`
 - `route_response_tp`
 
 List of MongoDB collections:
 
-- `route_request_tp`
+- `route_request_tpp`
 - `weather_tp`
 - `traffic_flow_tp`
 - `customers` 
