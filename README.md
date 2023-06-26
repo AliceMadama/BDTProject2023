@@ -64,7 +64,6 @@ RouteService is a user-centric and efficient service designed to assist commuter
 
 > **requirements.txt**: All the packages used in the project
 
-> Folders
 
 ---
 
