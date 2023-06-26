@@ -46,17 +46,8 @@ RouteService is a user-centric and efficient service designed to assist commuter
 - LSTM 2
   - best_model.pt
   - prediction.py
-  - training.py
   - training3.py
-   
-- data_prepare
-  - graphs.py
-  - holiday.py
-  - ny_full_data_prep.py
-  - nydata_vol.py
-
-- docker-files
-   - Dockerfile
+- docker-files # The folder contains all the Docker Compose YAML files for the technologies
 
 > _Kafka Files_
 > 1. `kafka_consumer.py` requires description
