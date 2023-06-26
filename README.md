@@ -44,12 +44,13 @@ RouteService is a user-centric and efficient service designed to assist commuter
 
 **Project Files**
 
-> LSTM 2
+> **LSTM 2**
 >  - best_model.pt
 >  - prediction.py
 >  - training3.py
 
-> docker-files # The folder contains all the Docker Compose YAML files for the technologies
+> **docker-files**
+> - The folder contains all the Docker Compose YAML files for the technologies
 
 > _Kafka Files_
 > 1. `kafka_consumer.py` requires description
@@ -61,7 +62,7 @@ RouteService is a user-centric and efficient service designed to assist commuter
 > 1. nrt_stream_process.py
 > 2. response_distributor.py
 
-> requirements.txt All the packages used in the project
+> **requirements.txt**: All the packages used in the project
 
 > Folders
 
