@@ -78,7 +78,10 @@ To stop the stack run:
  ./stop-stack.sh
 ```
 
--- Simulator
+---
+
+Simulator
+```shell copyable
 run - kafka_producer_traffic.py
 run - kafka_producer_weather.py
 run - kafka_producer_route.py
@@ -93,7 +96,11 @@ run - kafka_producer_traffic.py
 run - kafka_producer_weather.py
 run - nrt_stream_process.py
 run - response_distribute.py
-On telegram @routecalculatorBDT_bot is ready to receive requests
+```
+
+On telegram, @routecalculatorBDT_bot is ready to receive requests
+
+---
 
 Framework has been tested with:
 
