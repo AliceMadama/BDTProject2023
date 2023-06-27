@@ -59,8 +59,11 @@ RouteService is a user-centric and efficient service designed to assist commuter
 > 4. `kafka_producer_weather` File that considers weather data as producer
 >    
 > _Spark Structured Streaming Files_
-> 1. nrt_stream_process.py
-> 2. response_distributor.py
+> 1. `nrt_stream_process.py` Main data processing file
+> 2. `response_distributor.py` Receives results from Spark, then saves them to MongoDB and sends them to the Telegram bot
+>
+> _Telegram files_
+> `telegram_bot.py` Runs a Telegram bot that sends a user request
 
 > **requirements.txt**: All the packages used in the project
 
