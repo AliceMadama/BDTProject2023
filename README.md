@@ -63,7 +63,7 @@ RouteService is a user-centric and efficient service designed to assist commuter
 > 2. `response_distributor.py` Receives results from Spark, then saves them to MongoDB and sends them to the Telegram bot
 >
 > _Telegram files_
-> `telegram_bot.py` Runs a Telegram bot that sends a user request
+> 1. `telegram_bot.py` Runs a Telegram bot that sends a user request
 >
 > _Program starter files_
 > 1. `start-stack.sh`
