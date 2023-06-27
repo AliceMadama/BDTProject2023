@@ -38,7 +38,7 @@ class WeatherProducer:
     def send_weather_data(self, weather_data):
         message = weather_data.to_dict()
         self.producer.send(self.topic, value=message)
-        print(f"sent -- {weather_data}")
+        # print(f"sent -- {message['id']}")
 
     def start_producing(self, interval):
         weather_data_list = []
@@ -72,4 +72,4 @@ weather_df = pd.DataFrame({
 })
 
 weather_producer = WeatherProducer(bootstrap_servers, topic, weather_df)
-weather_producer.start_producing(interval=5)
+weather_producer.start_producing(interval=900)
