@@ -116,6 +116,10 @@ The name of the bot is @routecalculatorBDT_bot.
 It should be used only when running the bot files, as the function bot_polling() must be in use for it to communicate with the user.
 More detailed documentation is found within the code. 
 
+example inputs:
+- 40 Wall St, New York, NY 10005, USA
+- Ave, New York, NY 10017, USA
+
 ![alt text](Figures/telegram_ss.png)
 
 > **Warning**
