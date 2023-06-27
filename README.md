@@ -92,6 +92,7 @@ run - response_distribute.py
 
 #Test with Telegram
 run - telegram_bot.py
+run - kafka_consumer.py
 run - kafka_producer_traffic.py
 run - kafka_producer_weather.py
 run - nrt_stream_process.py
