@@ -98,28 +98,29 @@ class TelegramBot:
                 self.set_user_state(user_id, self.STATE_SOURCE)
             elif state == self.STATE_SOURCE:
                 source_address = message.text
+                coordinate = self.get_coordinate(source_address)
+                if not self.validate_coordinate(message, coordinate,
+                                                "The coordinate is not within the New York area. Please try again."):
+                    return  # Exit the function without creating a new instance
 
+                self.user_address_src[user_id] = coordinate
                 self.bot.reply_to(message, "Source coordinate received. Now, enter the destination coordinate:")
-                self.user_address_src[user_id] = self.get_coordinate(source_address)
                 self.set_user_state(user_id, self.STATE_DESTINATION)
+
             elif state == self.STATE_DESTINATION:
                 # Retrieve the destination coordinate
                 destination_address = message.text
+                coordinate = self.get_coordinate(destination_address)
+                if not self.validate_coordinate(message, coordinate,
+                                                "The coordinate is not within the New York area. Please try again."):
+                    return  # Exit the function without creating a new instance
 
+                self.user_address_dst[user_id] = coordinate
                 self.bot.reply_to(message, f"Destination coordinate received. Thank you!")
-                self.user_address_dst[user_id] = self.get_coordinate(destination_address)
 
                 # Process data
                 print(self.user_address_src[user_id])
                 print(self.user_address_dst[user_id])
-
-                route_request = {
-                    'src': [-73.84335071056566, 40.82601606504347],
-                    'dst': [-74.0060, 40.7128],
-                }
-
-                # s = {'longitude': 40.7827725, 'latitude': -73.9653627406542}
-                # l = {'longitude': 40.689253199999996, 'latitude': -74.04454817144321}
 
                 route = RouteRequest(user_id, self.user_address_src[user_id], self.user_address_dst[user_id])
                 print(route.to_dict())
@@ -131,6 +132,30 @@ class TelegramBot:
                 self.set_user_state(user_id, self.STATE_INITIAL)
 
         self.bot.polling()
+
+    def is_coordinate_in_new_york(self, coordinate):
+        # Define the New York area boundaries
+        min_latitude = 40.5
+        max_latitude = 4141.4547557
+        min_longitude = -74.5
+        max_longitude = -73.5
+        latitude = coordinate['latitude']
+        longitude = coordinate['longitude']
+        if min_latitude <= latitude <= max_latitude and min_longitude <= longitude <= max_longitude:
+            return True
+
+        return False
+
+    def validate_coordinate(self, message, coordinate, error_message):
+        if coordinate is None:
+            self.bot.reply_to(message, "Invalid coordinate. Please try again.")
+            return False
+
+        if not self.is_coordinate_in_new_york(coordinate):
+            self.bot.reply_to(message, error_message)
+            return False
+
+        return True
 
     def send_route_request_to_kafka(self, route):
         producer = KafkaProducer(bootstrap_servers=self.bootstrap_servers)
@@ -149,6 +174,8 @@ class TelegramBot:
         print(address)
         geolocator = Nominatim(user_agent="my-application1234")
         src = geolocator.geocode(address)
+        if src is None:
+            return None
         points = {'latitude': src.latitude, 'longitude': src.longitude}
         print(points)
 
