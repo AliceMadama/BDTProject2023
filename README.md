@@ -45,9 +45,9 @@ RouteService is a user-centric and efficient service designed to assist commuter
 **Project Files**
 
 > **LSTM 2**
->  - best_model.pt
->  - prediction.py
->  - training3.py
+>  - `best_model.pt`
+>  - `prediction.py`
+>  - `training3.py`
 
 > **docker-files**
 > - The folder contains all the Docker Compose YAML files for the technologies
@@ -64,6 +64,17 @@ RouteService is a user-centric and efficient service designed to assist commuter
 >
 > _Telegram files_
 > `telegram_bot.py` Runs a Telegram bot that sends a user request
+>
+> _Program starter files_
+> 1. `start-stack.sh`
+> 2. `stop-stack.sh`
+>
+> _Helper files_
+> 1. `user_generator.py` Used for generating users to simulate
+> 2. `turnout_function.py` Used for route sender to simulate
+> 3. `open_route_manager.py` Open route service class
+> 4. `database_manager.py` Mongodb class
+> 5. `redis_manager.py` Redis class
 
 > **requirements.txt**: All the packages used in the project
 
