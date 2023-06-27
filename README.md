@@ -87,6 +87,7 @@ RouteService is a user-centric and efficient service designed to assist commuter
 
 1 pip install -r requirements.txt 
 2 ./start-stack.sh
+3. simulator
 
 To stop the stack run:
  ./stop-stack.sh
