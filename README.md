@@ -87,7 +87,7 @@ RouteService is a user-centric and efficient service designed to assist commuter
 
 1 pip install -r requirements.txt 
 2 ./start-stack.sh
-3. simulator
+3. simulator.py
 
 To stop the stack run:
  ./stop-stack.sh
@@ -95,17 +95,8 @@ To stop the stack run:
 
 ---
 
-Simulator
-```shell copyable
-run - kafka_producer_traffic.py
-run - kafka_producer_weather.py
-run - kafka_producer_route.py
-
-run - kafka_consumer.py
-run - nrt_stream_process.py
-run - response_distribute.py
-
 #Test with Telegram
+```shell copyable
 run - telegram_bot.py
 run - kafka_consumer.py
 run - kafka_producer_traffic.py
