@@ -77,8 +77,9 @@ class Consumer:
         Process traffic flow message and perform necessary actions.
         """
         try:
+
             # Save data in Redis cache
-            if topic == 'route_request_tp':
+            if topic == 'route_request_tpp':
                 # Process route request streaming data
                 cache_key = f"{topic}:{body['id']}"
             else:
