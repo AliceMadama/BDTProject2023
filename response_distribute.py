@@ -6,9 +6,11 @@ import uuid
 import folium
 import pandas as pd
 import telebot
+from colorama import Fore, Style
 from kafka import KafkaConsumer, KafkaProducer
 
 from database_manager import DatabaseManager
+from redis_manager import RedisManager
 
 
 class ProcessedResult:
@@ -50,6 +52,7 @@ class Response:
 
     def __init__(self):
         self.mongo_db_manager = DatabaseManager()
+        self.redis_manager = RedisManager()
         self.producer = KafkaProducer(bootstrap_servers=self.bootstrap_servers)
         self.consumer = KafkaConsumer(
             'route_response_tp',
@@ -81,8 +84,8 @@ class Response:
                 id=str(uuid.uuid4()),
                 request_id=request_id,
                 route_details=route,
-                travel_time=route["properties"]["summary"]["duration"] // 60,
-                distance=route["properties"]["summary"]["distance"] // 1000,
+                travel_time=route["properties"]["summary"]["duration"],
+                distance=route["properties"]["summary"]["distance"],
                 congestion_level=congestion_level,
                 weather_conditions=weather_conditions,
                 timestamp=timestamp
@@ -113,28 +116,56 @@ class Response:
             self.mongo_db_manager.connect_to_database("traffic_management", "route_response_tp")
             self.mongo_db_manager.insert_document(processed_records)
 
-            # Send the response to the request user
-            self.send_response_to_user(5780618150, processed_records)
+            cache_key = f"route_request_tpp:{record['id']}"
+            route_request = self.redis_manager.get_data_from_cache(cache_key)
+            # print(f'route request from cache: {route_request}')
+            if route_request is None:
+                continue
+            route_request = json.loads(route_request)
+            user_id = route_request["user_id"]
+
+            print(
+                Fore.CYAN + f"{datetime.datetime.now().isoformat()}--"
+                            f" pushing to db {record['id']} of {user_id} " + Style.RESET_ALL)
+
+            if len(str(route_request["user_id"])) < 20:  # generated user if > 20 else simulated user
+                print(
+                    Fore.YELLOW + f"Telegram request" + Style.RESET_ALL)
+                self.send_response_to_user(route_request["user_id"], processed_records)
+            else:
+                print(
+                    Fore.YELLOW + f"Simulation request" + Style.RESET_ALL)
+                continue
         self.consumer.commit()
         # Close the Kafka consumer
         self.consumer.close()
 
     def send_response_to_user(self, user_id, processed_result):
-        response_message = ""
+
         for result in processed_result:
             # Extract relevant information from the processed result and append it to the response message
             # print(result)
             map_graph = self.create_map(result)
             image1 = map_graph._to_png()
-            photo_stream1 = io.BytesIO(image1)
-            photo_stream1.seek(0)
-            self.bot.send_photo(user_id, photo_stream1)
+            photo_stream = io.BytesIO(image1)
+            photo_stream.seek(0)
 
-            travel_time = result['travel_time']
-            distance = result['distance']
+            travel_time = result['travel_time'] // 60
+            distance = result['distance'] // 1000
             response_message = f"Travel Time: {travel_time} Distance: {distance}\n"
             # Send the response message to the bot with the given user ID
-            self.bot.send_message(user_id, response_message)
+
+            try:
+                # Send the response message to the bot with the retrieved user ID
+                self.bot.send_photo(user_id, photo_stream)
+                self.bot.send_message(user_id, response_message)
+            except telebot.apihelper.ApiTelegramException as e:
+                error_message = str(e)
+                if "chat_id is empty" in error_message:
+                    # Handle the case when the chat_id is empty
+                    print("Error: chat_id is empty")
+                    # Perform necessary actions or error handling here
+
         return None
 
     def create_map(self, gj):
