@@ -58,4 +58,4 @@ if __name__ == "__main__":
     topic = 'traffic_flow_tp'
 
     traffic_producer = TrafficFlowProducer(bootstrap_servers, topic, traffic_df)
-    traffic_producer.generate_traffic_flow(interval=1, duration=30)  # Send three events every 1 second for 10 seconds
+    traffic_producer.generate_traffic_flow(interval=900, duration=30)
