@@ -214,6 +214,6 @@ class User_checker:
 
 
 if __name__ == "__main__":
-    TOKEN = '6231783852:AAGyqchKx1IbuulyTEPARPN4uCtDNpoehJk'  # Replace with your Telegram bot token
+    TOKEN = 'x'  # Replace with your Telegram bot token
     bot = TelegramBot(TOKEN)
     bot.start_bot()
